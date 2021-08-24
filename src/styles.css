@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+html,body{
+    margin: 10px;
+    background-color: var(--surface-b);
+    font-family: var(--font-family);
+}
+
+.text-layout{
+    color: var(--text-color);
+}
+.card{
+    display: flex;
+    justify-content: center !important;
+}
+.p-grid{
+    margin-top: 5%;
+}
+.button{
+    margin: 10px;
+    width: 25px;
+}
+.panel{
+    margin: 10px;;
+}
+.input{
+    width: 100%;
+}

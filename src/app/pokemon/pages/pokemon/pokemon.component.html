@@ -1,0 +1,27 @@
+<hr>
+
+<div class="p-grid ">
+    <div class="p-col-6">
+        <div class="p-inputgroup input">
+            <input type="text" pInputText placeholder="Keyword">   
+            <button type="button" pButton pRipple icon="pi pi-refresh" styleClass="p-button-warn"></button>      
+        </div>
+    </div>
+</div>
+
+<h3>Lista de  Pokemones</h3>
+<div class="p-grid " >
+    
+    <div class="p-col-2" *ngFor="let item of data">
+
+        <p-card [header]="item.name | titlecase" [style]="{'width': '25rem', 'margin-bottom': '1em'}" class="card">
+            <ng-template pTemplate="header">
+                <img  [src]="item.image" >
+            </ng-template>
+            <p-button label="Ver" [routerLink]="['/Pokemon',item.position]" icon="pi pi-eye"></p-button>
+
+        </p-card>
+        <br>
+    </div>
+ 
+</div>
