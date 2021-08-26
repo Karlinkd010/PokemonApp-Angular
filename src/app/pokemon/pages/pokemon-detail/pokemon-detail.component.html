@@ -10,13 +10,65 @@
                 <img [src]="poke.sprites.other?.dream_world.front_default" alt="Card">
             </ng-template>
             <ng-template pTemplate>
-                <p>{{poke}}</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </ng-template>
         </p-splitter>
 
         
     </p-panel>
 
+
+</div>
+
+
+<div class="p-grid " >
+    <div class="p-col-3" >
+
+        <p-card [subheader]="poke.name | titlecase" [style]="{'width': '25rem', 'margin-bottom': '1em'}" class="card">
+            <ng-template pTemplate="header">
+                <img  [src]="poke.sprites.front_default" >
+            </ng-template>
+        </p-card>
+        <br>
+    </div>
+    
+    <div class="p-col-3" >
+
+        <p-card [subheader]="poke.name | titlecase" [style]="{'width': '25rem', 'margin-bottom': '1em'}" class="card">
+            <ng-template pTemplate="header">
+                <img  [src]="poke.sprites.back_default" >
+            </ng-template>
+        </p-card>
+        <br>
+    </div>
+    
+    <div class="p-col-3" >
+
+        <p-card [subheader]="poke.name | titlecase" [style]="{'width': '25rem', 'margin-bottom': '1em'}" class="card">
+            <ng-template pTemplate="header">
+                <img  [src]="poke.sprites.front_shiny" >
+            </ng-template>
+        </p-card>
+        <br>
+    </div>
+
+
+
+    <div class="p-col-3" >
+
+        <p-card [subheader]="poke.name | titlecase" [style]="{'width': '25rem', 'margin-bottom': '1em'}" class="card">
+            <ng-template pTemplate="header">
+                <img  [src]="poke.sprites.back_shiny" >
+            </ng-template>
+        </p-card>
+        <br>
+    </div>
+    
+
+ 
 </div>
 
 
