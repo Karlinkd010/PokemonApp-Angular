@@ -17,8 +17,12 @@ export class MenuComponent implements OnInit {
         label:'Pokemon Api',
         icon:'pi pi-desktop',
       },
-      
+      {
+        label:'The Rick and Morty API',
+        icon:'pi pi-android',
+      },
     ];
   }
 
 }
+
